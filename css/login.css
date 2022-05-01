@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Orelega+One&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0;
+    font-family: 'Orelega One', cursive;
+}
+a {
+    text-decoration: none;
+    color: #101010;
+}
+
+i {
+    font-size: 2rem;
+    cursor: pointer;
+}
+.main-container {
+    background: #09172e;  
+    background: -webkit-linear-gradient(to right, #243B55, #09172e);  
+    background: linear-gradient(to right, #243B55, #09172e); 
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-right {
+    color: #ffffff;
+    height: 80vh;
+    width: 40vw;
+    background-color: #101010;
+    display: flex;
+    justify-content: center;
+    border-radius: 6px;
+    align-items: center;
+}
+
+.conteudo-right  {
+    text-align: center;
+    height: 70%;
+    width: 50%;
+    text-decoration: none;
+    
+}
+.conteudo-right h2  {
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.ipts input {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding: 6px 0;
+    margin: 5px 0;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+}
+
+.conteudo-right button {
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    margin: auto;
+    background-color: #09172e;
+    border: 0;
+    outline: none;
+    border-radius: 6px;
+    transition: all 0.8s;
+    color: white;
+}
+
+.conteudo-right button:hover {
+    transform: scale(1.1);
+}
+
+
+
