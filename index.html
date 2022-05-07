@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/index.css">
+
+</head>
+
+<body onload="slider()">
+    <div class="banner">
+        <div class="slider">
+            <img src="assets/img1.webp" id="img1">
+            <!-- <img src="assets/21.jpg" alt="">
+            <img src="assets/the-weeknd.jpg" alt=""> -->
+        </div>
+        <div class="overlay">
+            <div class="header">
+                <div class="logo">
+                    <h1>Tizzle</h1>
+                </div>
+                <div class="itens">
+                    <a href="">Home</a>
+                    <a href="">Noticias</a>
+                    <a href="#container">Top 15</a>
+                    <a href="">Sobre</a>
+                    <a href="">Cadastre-se</a>
+                </div>
+            </div>
+            <div class="conteudo">
+                <h1>O melhor portal de notícias de música do Brasil.</h1>
+                <h3>Fique por dentro do mundo do Hip-Hop e R&B!</h3>
+                <button>Faça parte!</button>
+
+            </div>
+
+        </div>
+    </div>
+    <div class="top10">
+        <div class="lboard_section">
+            <div class="lboard_tabs">
+                <div class="tabs">
+                    <ul>
+                        <li onclick="mostrarhoje()" data-li="today">Hoje</li>
+                        <li onclick="mostrarmes()" class="active" data-li="month">Mês</li>
+                        <li onclick="mostrarano()" data-li="year">Ano</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="lboard_wrap">
+
+
+
+
+                <!-- TOP 10 DIA -->
+
+
+
+
+                <div id="hoje" class="lboard_item today" style="display: none;">
+                    <div class="lboard_mem">
+                        <div class="img">
+                            <img src="pic_1.png" alt="picture_1">
+                        </div>
+                        <div class="name_bar">
+                            <p><span>1.</span> Charles John</p>
+                            <div class="bar_wrap">
+                                <div class="inner_bar" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="points">
+                            195 points
+                        </div>
+                    </div>
+                    <div class="lboard_mem">
+                        <div class="img">
+                            <img src="pic_2.png" alt="picture_2">
+                        </div>
+                        <div class="name_bar">
+                            <p><span>2.</span>Alex Mike</p>
+                            <div class="bar_wrap">
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="lboard_mem">
+                        <div class="img">
+                            <img src="pic_3.png" alt="picture_2">
+                        </div>
+                        <div class="name_bar">
+                            <p><span>3.</span>Johnson</p>
+
+                        </div>
+
+                    </div>
+                    <div class="lboard_mem">
+                        <div class="img">
+                            <img src="pic_4.png" alt="picture_1">
+                        </div>
+                        <div class="name_bar">
+                            <p><span>4.</span>Rosey</p>
+
+                        </div>
+
+                    </div>
+                    <div class="lboard_mem">
+                        <div class="img">
+                            <img src="pic_5.png" alt="picture_2">
+                        </div>
+                        <div class="name_bar">
+                            <p><span>5.</span>Scarlett Angela</p>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+                <!-- TOP 10 MES -->
+
+
+
+
+                <div id="mes" class="lboard_item month" style="display: block;">
+                    <div class="lboard_mem">
+                        <div class="img">
+                            <img src="assets/frank-ocean-blonde.jpg" alt="picture_2">
+                        </div>
+                        <div class="name_bar">
+                            <p><span>1.</span> ivy - Frank Ocean</p>
+                        </div>
+
+                    </div>
+                    <div class="lboard_mem">
+                        <div class="img">
+                            <img src="assets/mydearmelancholy.jpg" alt="picture_3">
+                        </div>
+                        <div class="name_bar">
+                            <p><span>2.</span>Try me - The Weekend</p>
+
+                        </div>
+
+                    </div>
+                    <div class="lboard_mem">
+                        <div class="img">
+                            <img src="pic_1.png" alt="picture_1">
+                        </div>
+                        <div class="name_bar">
+                            <p><span>3.</span>Charles John</p>
+
+                        </div>
+
+                    </div>
+                    <div class="lboard_mem">
+                        <div class="img">
+                            <img src="pic_5.png" alt="picture_5">
+                        </div>
+                        <div class="name_bar">
+                            <p><span>4.</span>Scarlett Angela</p>
+
+                        </div>
+
+                    </div>
+                    <div class="lboard_mem">
+                        <div class="img">
+                            <img src="pic_4.png" alt="picture_4">
+                        </div>
+                        <div class="name_bar">
+                            <p><span>5.</span>Rosey</p>
+
+                        </div>
+
+                    </div>
+                    
+                </div>
+
+
+                <!-- TOP 10 ANO  -->
+
+
+
+
+                <div id="ano" class="lboard_item year" style="display: none;">
+                    <div class="lboard_mem">
+                        <div class="img">
+                            <img src="pic_5.png" alt="picture_5">
+                        </div>
+                        <div class="name_bar">
+                            <p><span>1.</span>Scarlett Angela</p>
+
+                        </div>
+
+                    </div>
+                    <div class="lboard_mem">
+                        <div class="img">
+                            <img src="pic_4.png" alt="picture_4">
+                        </div>
+                        <div class="name_bar">
+                            <p><span>2.</span>Rosey</p>
+
+                        </div>
+
+                    </div>
+                    <div class="lboard_mem">
+                        <div class="img">
+                            <img src="pic_3.png" alt="picture_3">
+                        </div>
+                        <div class="name_bar">
+                            <p><span>3.</span>Johnson</p>
+                        </div>
+                    </div>
+                    <div class="lboard_mem">
+                        <div class="img">
+                            <img src="pic_1.png" alt="picture_1">
+                        </div>
+                        <div class="name_bar">
+                            <p><span>4.</span>Charles John</p>
+                        </div>
+
+                    </div>
+                    <div class="lboard_mem">
+                        <div class="img">
+                            <img src="pic_2.png" alt="picture_2">
+                        </div>
+                        <div class="name_bar">
+                            <p><span>5.</span>Alex Mike</p>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+<script>
+    var img1 = document.getElementById("img1"); //Guarda o id em que as imagens vão ser substituidas
+
+    var imagens = new Array(  // Vai guardar todas as imagens
+        "assets/img1.webp",
+        "assets/img2.jpg",
+        "assets/img3.jpg"
+    );
+    var len = imagens.length;
+    var i = 0
+
+    function slider() {
+        if (i > len - 1) {
+            i = 0
+
+        }
+        img1.src = imagens[i];
+        i++
+        setTimeout('slider()', 3000); // Setando o tempo de transição (3s)
+    }
+    function mostrarhoje() {
+        hoje.style.display = "block"
+        mes.style.display = "none"
+        ano.style.display = "none"
+
+    }
+
+    function mostrarano() {
+        hoje.style.display = "none"
+        mes.style.display = "none"
+        ano.style.display = "block"
+    }
+    function mostrarmes() {
+        hoje.style.display = "none"
+        mes.style.display = "block"
+        ano.style.display = "none"
+    }
+
+
+</script>

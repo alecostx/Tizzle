@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400&family=Orelega+One&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Orelega One', cursive;
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.slider {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+}
+
+#img1 {
+    width: 100%;
+    height: 100vh;
+    animation: zoom 3s linear infinite;
+}
+
+/* A @keyframes seta as especificações da animação 'zoom' */
+@keyframes zoom {  
+    0% {
+        transform: scale(1.3);
+    }
+    15% {
+        transform: scale(1);
+    }
+    85% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.3);
+    }
+}
+
+.overlay {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+    position: absolute;
+    top: 0;
+}
+
+.header {
+    width: 85%;
+    display: flex;
+    align-items: center;
+    margin: 35px auto;
+}
+
+.logo h1 {
+    font-size: 4rem;
+    color: #999;
+    cursor: pointer;
+
+}
+
+.itens {
+    flex: 1;
+    align-items: center;
+    text-align: right;
+
+
+}
+.itens a {
+    color: #999;
+    font-size: 1.3rem;
+    text-decoration: none;
+    margin-left: 50px;
+    padding: 4px;
+}
+
+.itens a:hover {
+    color: #a9a9a9;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    border-bottom: 6px;
+    border-style: solid;
+}
+
+.conteudo {
+    width: 60%;
+    margin: 160px auto 0;
+    text-align: center;
+    color: #999;
+}
+
+.conteudo h1 {
+    font-size: 2rem;
+}
+
+.conteudo h3 {
+    width: 80%;
+    margin: 20px auto 100px;
+    font-weight: 100;
+    font-size: 1.5rem;
+}
+
+ button {
+     color: #999;
+    cursor: pointer;
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    border-radius: 12px;
+    font-size: 1.2rem;
+    border: 3px solid #999;
+    background: transparent;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background: #999;
+    color: black;
+    border: 3px solid rgb(0, 0, 0)
+}
+
+#container {
+    padding-bottom: 100px;
+    padding-top: 100px;
+    background-color: whitesmoke;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+html {
+    scroll-behavior: smooth;
+  }
+
+
+  /* #container .card1 {
+      padding-top: 140px;
+      padding-left: 140px;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      height: 80vh;
+      width: 40vw;
+      background-color: crimson;
+
+  }
+
+  #container .card1 .over1 {
+    min-height: 130%;
+    min-width: 130%;
+    background-color: goldenrod;
+  }
+
+  .opcoes {
+      display: flex;
+      color: whitesmoke;
+      margin-bottom: 600px;
+      margin-right: 130px;
+  }
+
+  .opcoes h2 {
+      display: flex;
+      text-align: center;
+      margin-left: 100px;
+      margin-right: 100px;
+      font-family: monospace;
+  } */
+
+  *{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+}
+
+body{
+	background: #101010;
+}
+
+.top10{
+	width: 100%;
+	height: 100%;
+}
+
+.lboard_section{
+	width: 500px;
+	height: 400px;
+	margin: 100px auto 0;
+	background: #f94f62;
+	padding: 25px 40px;
+	position: relative;
+	border-radius: 5px;
+}
+
+.lboard_section .lboard_tabs ul{
+	display: flex;
+}
+
+.lboard_section .lboard_tabs ul li{
+	margin-right: 50px;
+	font-size: 18px;
+	font-weight: 600;
+	color: #3a3d51;
+	cursor: pointer;
+}
+
+.lboard_section .lboard_tabs ul li:hover,
+.lboard_section .lboard_tabs ul li.active{
+	color: #fff;
+}
+
+.lboard_wrap{
+	position: absolute;
+	top: 70px;
+	left: 40px;
+	background: #0990ff;
+	width: 100%;
+	height: 100%;
+	border-radius: 5px;
+}
+
+.lboard_wrap .lboard_item{
+	padding: 25px;
+}
+
+.lboard_wrap .lboard_mem{
+	display: flex;
+	align-items: center;
+	padding: 15px 0;
+	border-bottom: 1px solid #ffe773;
+}
+
+.lboard_wrap .lboard_mem:first-child{
+	padding-top: 0;
+}
+
+.lboard_wrap .lboard_mem:last-child{
+	padding-bottom: 0;
+	border-bottom: 0;
+}
+
+.lboard_wrap .lboard_mem .img{
+	width: 50px;
+}
+
+.lboard_wrap .lboard_mem img{
+	display: block;
+	width: 100%;
+}
+
+.lboard_wrap .lboard_mem .name_bar{
+	margin: 0 20px;
+	width: calc(100% - 150px);
+}
+
+.lboard_wrap .lboard_mem .name_bar p{
+	color: #3a3d51;
+}
+
+.lboard_wrap .lboard_mem .name_bar p span{
+	margin-right: 5px;
+}
+
+.lboard_wrap .lboard_mem .points{
+	width: 100px;
+	color: #3a3d51;
+}
+
+.lboard_wrap .lboard_mem .name_bar .bar_wrap{
+	width: 100%;
+	height: 5px;
+	background: #d5b000;
+	margin-top: 5px;
+	border-radius: 5px;
+	position: relative;
+	overflow: hidden;
+}
+
+.lboard_wrap .lboard_mem .name_bar .bar_wrap .inner_bar{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 5px;
+	background: #fff;
+	border-radius: 5px;
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
+}
+
+
+
