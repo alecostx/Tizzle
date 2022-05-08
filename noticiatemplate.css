@@ -1,22 +1,82 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300&family=Orelega+One&display=swap');
+.conteudo_noticia {
+height: 100vh;
+width: 100vw;
+}
+.titulo {
+    display: flex;
+    height: 40vh;
+    width: 50%;
+    margin-left: 10%;
+    margin-top: 100px;
+    justify-content: center;
+}
+.titulo h1 {
+    font-size: 3rem;
+}
+.ilustrador {
+    display: flex;
+}
+
+.ilustrador img {
+    height: 400px;
+    width: 60%;
+    margin-left: 10%;
+    border-radius: 24px;
+}
+.content {
+    margin-top: 100px;
+    margin-left: 10%;
+    height: 100vh;
+    width: 80%;
+}
+
+.content h1 {
+    font-size: 3rem;
+    font-weight: 900;
+}
+.content p {
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 * {
-    margin: 0%;
+    margin: 0;
     padding: 0;
     font-family: 'Nunito';
     list-style: none;
     text-decoration: none;
 }
-
+.header {
+    height: 12vh;
+    width: 100vw;
+}
 header {
     width: 100%;
-    height: 10%;
-    /* background: #DA4453;  
-  background: -webkit-linear-gradient(to right, #89216B, #DA4453);
-  background: linear-gradient(to right, #89216B, #DA4453); */
+    height: 100%;
+    background: #DA4453;  
     display: block;
-    position: fixed;
-    background-color: transparent;
-    
+
 }
 header .inner{
     width: 100%;
@@ -61,8 +121,8 @@ header nav a{
 }
 
 header nav .button{
-    background-color: #DA4453;
-    color: rgb(255, 255, 255);
+    background-color: #ffffff;
+    color: #DA4453;
     padding: 10px 20px;
     border-radius: 4px;
    

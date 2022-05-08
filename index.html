@@ -149,9 +149,9 @@
 
         <div id="tabela_artistas" style="display:none;">
             <div class="tipos_rank">
-                <h1>Top músicas</h1>
-                <h1 class="agora">Top artistas</h1>
-                <h1>Top albuns</h1>
+                <h1 onclick="mostrarmusica()">Top músicas</h1>
+                <h1 onclick="mostrarartista()" class="agora">Top artistas</h1>
+                <h1 onclick="mostraralbum()">Top albuns</h1>
             </div>
             <table>
                 <thead>
@@ -240,9 +240,9 @@
         </div>
         <div id="tabela_albuns" style="display:none;">
             <div class="tipos_rank">
-                <h1>Top músicas</h1>
-                <h1>Top artistas</h1>
-                <h1 class="agora">Top albuns</h1>
+                <h1 onclick="mostrarmusica()">Top músicas</h1>
+                <h1 onclick="mostrarartista()">Top artistas</h1>
+                <h1 onclick="mostraralbum()" class="agora">Top albuns</h1>
             </div>
             <table>
                 <thead>
@@ -351,12 +351,12 @@
     function slider() {
         if (i > len - 1) {
             i = 0
-
         }
         img1.src = imagens[i];
         i++
         setTimeout('slider()', 3000); // Setando o tempo de transição (3s)
     }
+    
     function mostrarmusica() {
         tabela_artistas.style.display = "none"
         tabela_musicas.style.display = "block"
