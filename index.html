@@ -27,17 +27,17 @@
                     <h1>Tizzle</h1>
                 </div>
                 <div class="itens">
-                    <a href="">Home</a>
-                    <a href="">Noticias</a>
+                    <a href="index.html">Home</a>
+                    <a href="login.html">Noticias</a>
                     <a href="#ranks">Top 10</a>
                     <a href="">Sobre</a>
-                    <a href="">Cadastre-se</a>
+                    <a href="cadastro.html">Cadastre-se</a>
                 </div>
             </div>
             <div class="conteudo">
                 <h1>O melhor portal de notícias de música do Brasil.</h1>
                 <h3>Fique por dentro do mundo do Hip-Hop e R&B!</h3>
-                <button>Faça parte!</button>
+                <a href="login.html"><button>Faça parte!</button></a>
 
             </div>
 
@@ -49,7 +49,7 @@
     <section id="ranks">
         <div id="tabela_musicas" style="display: block;">
             <div class="tipos_rank">
-                <h1 onclick="mostrararmusica()" class="agora">Top músicas</h1>
+                <h1 onclick="mostrarmusica()" class="agora">Top músicas</h1>
                 <h1 onclick="mostrarartista()">Top artistas</h1>
                 <h1 onclick="mostraralbum()">Top albuns</h1>
             </div>
@@ -64,7 +64,7 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>1</td>
+                        <td>1 <i id="subiu" class="fa-solid fa-arrow-up"></i></td>
                         <td>Ivy</td>
                         <td>Frank Ocean</td>
                         <td><img src="assets/frank-ocean-blonde.jpg" alt=""></td>
@@ -72,7 +72,7 @@
                     </tr>
 
                     <tr>
-                        <td>2</td>
+                        <td>2 <i id="desceu" class="fa-solid fa-arrow-do"</td>
                         <td>Try me</td>
                         <td>The Weekend</td>
                         <td><img src="assets/mydearmelancholy.jpg" alt=""></td>
@@ -158,82 +158,81 @@
                     <tr>
                         <th>Posição</th>
                         <th>Artista</th>
-                        <th>Nacionalidade</th>
+                        <th></th>
                         <th>Gênero</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <td>1</td>
-                        <td>Ivy</td>
-                        <td>Frank Ocean</td>
-                        <td><img src="assets/frank-ocean-blonde.jpg" alt=""></td>
+                        <td>Don Toliver</td>
+                        <td><img src="assets/dontoliverprofile.jpg" alt=""></td>
+                        <td>Hip-Hop</td>
 
                     </tr>
 
                     <tr>
                         <td>2</td>
-                        <td>Try me</td>
-                        <td>The Weekend</td>
-                        <td><img src="assets/mydearmelancholy.jpg" alt=""></td>
+                        <td>Knucks</td>
+                        <td><img src="assets/knucks.webp" alt=""></td>
+                        <td>Grime/Drill</td>
 
 
                     </tr>
                     <tr>
                         <td>3</td>
-                        <td>Los Pollos Hermanos</td>
-                        <td>Kucks</td>
-                        <td><img src="assets/lospollos.jpg" alt=""></td>
+                        <td>The Weekend</td>
+                        <td><img src="assets/THEWEEKEND.webp" alt=""></td>
+                        <td>R&B/Soul</td>
 
 
                     </tr>
                     <tr>
                         <td>4</td>
-                        <td>Nice & Good</td>
-                        <td>Kucks ft SL</td>
-                        <td><img src="assets/nicegood.jpg" alt=""></td>
+                        <td>Sainté</td>
+                        <td><img src="assets/sainte.jpg" alt=""></td>
+                        <td>Drill/Grime</td>
 
                     </tr>
                     <tr>
                         <td>5</td>
-                        <td>Selfish</td>
-                        <td>Kanye West ft XXXTENTACION</td>
-                        <td><img src="assets/donda2.jpg" alt=""></td>
+                        <td>Kanye West</td>
+                        <td><img src="assets/kanye-west.webp" alt=""></td>
+                        <td>Rap</td>
                     </tr>
                     <tr>
                         <td>6</td>
-                        <td>SWEET / I THOUGHT YOU WANTED TO DANCE</td>
-                        <td>Tyler, The Creator, Brent Faiyaz, Fana Hues</td>
-                        <td><img src="assets/callmeifyougetlost.jpg" alt=""></td>
+                        <td>Tyler, The Creator</td>
+                        <td><img src="assets/tyler.jpg" alt=""></td>
+                        <td>Rap</td>
 
                     </tr>
                     <tr>
                         <td>7</td>
-                        <td>See you Again</td>
-                        <td>Tyler, The Creator ft Kali Uchis</td>
-                        <td><img src="assets/seeu.webp" alt=""></td>
+                        <td>Playboi Carti</td>
+                        <td><img src="assets/playboi-carti.jpg" alt=""></td>
+                        <td>Hip-hop/Rap</td>
 
                     </tr>
                     <tr>
                         <td>8</td>
-                        <td>Stylin'</td>
-                        <td>Sainté</td>
-                        <td><img src="assets/stylin.jpg" alt="">
+                        <td>YNW Melly</td>
+                        <td><img src="assets/melly.png" alt=""></td>
+                        <td>Rap</td>
 
                     </tr>
                     <tr>
                         <td>9</td>
-                        <td>
-                            Stop Breathing</td>
-                        <td>Playboi Carti</td>
-                        <td><img src="assets/redd.webp" alt=""></td>
+                        <td>Yunk Vino</td>
+                        <td><img src="assets/vino.jpg" alt=""></td>
+                        <td>Trap/Rap</td>
 
                     </tr>
                     <tr>
                         <td>10</td>
-                        <td>Leans, Pt. 2</td>
-                        <td>Yunk Vino, Volp</td>
-                        <td><img src="assets/leanspt2.png" alt=""></td>
+                        <td>XXXTENTACION</td>
+                        <td><img src="assets/xxxtentacion.jpg" alt=""></td>
+                        <td>Hip-Hop/Rap</td>
 
                     </tr>
                 </tbody>
@@ -358,7 +357,7 @@
         i++
         setTimeout('slider()', 3000); // Setando o tempo de transição (3s)
     }
-    function mostrararmusica() {
+    function mostrarmusica() {
         tabela_artistas.style.display = "none"
         tabela_musicas.style.display = "block"
         tabela_albuns.style.display = "none"
