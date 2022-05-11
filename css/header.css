@@ -6,6 +6,10 @@
     list-style: none;
     text-decoration: none;
 }
+*::selection {
+    background-color: #a9a9a9;
+    color: black;
+}
 
 header {
     width: 100%;

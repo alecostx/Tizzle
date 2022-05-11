@@ -5,6 +5,10 @@
     padding: 0;
     font-family: 'Orelega One', cursive;
 }
+*::selection {
+    background-color: #a9a9a9;
+    color: black;
+}
 a {
     text-decoration: none;
     color: #ffffff;

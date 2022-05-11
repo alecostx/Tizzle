@@ -43,7 +43,10 @@ table {
     background: rgb(245, 242, 242);
     
 }
-
+*::selection {
+    background-color: #a9a9a9;
+    color: black;
+}
 th {
     background-color: #dc143c;
     font-weight: bold;

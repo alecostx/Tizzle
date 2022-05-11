@@ -273,9 +273,13 @@ background-color: #101010;
 
 .not4 {
     height: 100%;
-    width: 24.8%;
+    width: 25%;
     cursor: pointer;
     border-right: #101010 solid 3px;
+}
+*::selection {
+    background-color: #a9a9a9;
+    color: black;
 }
 
 .not1 .foto {

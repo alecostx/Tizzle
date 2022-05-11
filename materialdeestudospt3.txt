@@ -1,0 +1,132 @@
+create database sprint31adsb;
+
+use sprint31adsb;
+
+-- criando a tabela aluno
+CREATE TABLE aluno (
+ra int primary key auto_increment,
+nome varchar(50)
+)auto_increment = 50000;
+
+-- criando a tabela curso
+CREATE TABLE curso (
+idCurso int primary key auto_increment,
+nomeCurso varchar(45)
+)auto_increment = 100;
+
+alter table curso rename column nomeCurso to nome;
+
+-- criando a tabela associativa
+CREATE TABLE matricula (
+cod int auto_increment,
+fkRa int,
+foreign key (fkRa) references aluno(ra),
+fkCurso int,
+foreign key (fkCurso) references curso(idCurso),
+primary key (cod, fkRa, fkCurso),
+dtInicio date,
+nivel char(2)
+);
+
+-- inserindo dados dos alunos
+INSERT INTO aluno values (null, 'Maciel'),
+						(null, 'Mayla'),
+                        (null, 'Elissandra');
+                        
+-- inserindo dados dos cursos
+INSERT INTO curso values (null, 'Inglês'),
+						(null, 'Espanhol'),
+                        (null, 'Mandarim');
+                        
+select * from aluno;
+select * from curso;
+select * from matricula;
+
+-- inserindo matrícula
+INSERT INTO matricula values (null, 50000, 100, '2022-01-20', 'B1'),
+							(null, 50000, 101, '2022-02-10', 'A1'),
+                            (null, 50001, 100, '2022-01-20', 'B1'),
+                            (null, 50002, 102, '2022-01-15', 'I3');
+                            
+SELECT * from aluno join matricula on ra = fkRa
+	join curso on idCurso = fkCurso;
+    
+INSERT INTO aluno values (null, 'Franklin');
+
+SELECT * from aluno left join matricula on ra = fkRa
+	left join curso on idCurso = fkCurso;
+    
+INSERT INTO curso values (null, 'Francês');
+
+SELECT * from aluno right join matricula on ra = fkRa
+	right join curso on idCurso = fkCurso;
+    
+SELECT * from aluno left join matricula on ra = fkRa
+	left join curso on idCurso = fkCurso
+    union 
+SELECT * from aluno right join matricula on ra = fkRa
+	right join curso on idCurso = fkCurso;
+    
+SELECT aluno.nome as NomeAluno, curso.nome as NomeCurso, dtInicio 
+	from aluno left join matricula on ra = fkRa
+	left join curso on idCurso = fkCurso
+    union 
+SELECT aluno.nome as NomeAluno, curso.nome as NomeCurso, dtInicio 
+	from aluno right join matricula on ra = fkRa
+	right join curso on idCurso = fkCurso;
+    
+SELECT aluno.nome as NomeAluno, curso.nome as NomeCurso, dtInicio 
+	from aluno left join matricula on ra = fkRa
+	left join curso on idCurso = fkCurso
+    where fkCurso is null
+    union 
+SELECT aluno.nome as NomeAluno, curso.nome as NomeCurso, dtInicio 
+	from aluno right join matricula on ra = fkRa
+	right join curso on idCurso = fkCurso
+    where fkCurso is null;
+    
+-- funções matemáticas
+
+alter table matricula add nota double;
+
+desc matricula;
+select * from matricula;
+
+update matricula set nota = 7.4 where cod = 1;
+update matricula set nota = 9.2 where cod = 2;
+update matricula set nota = 8.5 where cod = 3;
+update matricula set nota = 8 where cod = 4;
+
+-- quantidade de registros no campo
+select * from matricula;
+
+select count(nivel) from matricula;
+update matricula set nivel = null where cod = 2;
+
+select count(nivel), count(dtInicio) from matricula;
+
+-- soma das notas
+select sum(nota) from matricula;
+select sum(nota) from matricula where fkRa = 50000;
+
+-- average
+select avg(nota) from matricula;
+
+-- round
+select round(avg(nota),2), avg(nota), round(avg(nota),1) 
+			from matricula;
+            
+-- truncate
+select truncate(avg(nota),2) from matricula;
+
+-- minima e máxima
+select min(nota), max(nota) from matricula;
+select min(nota) as 'Nota mínima', max(nota) as 'Nota máxima' 
+					from matricula;
+                    
+-- soma das notas agrupados por alunos
+select nome, sum(nota) from aluno join matricula 
+	on ra = fkRa GROUP BY nome;
+    
+select nome, sum(nota), avg(nota), min(nota), max(nota) from aluno join matricula 
+	on ra = fkRa GROUP BY nome order by nome;

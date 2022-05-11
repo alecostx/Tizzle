@@ -4,6 +4,10 @@
     padding: 0;
     font-family: 'Nunito';
 }
+*::selection {
+    background-color: #a9a9a9;
+    color: black;
+}
 
 .main-container {
 background: linear-gradient(to right, #090909, #181818); 
