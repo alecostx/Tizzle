@@ -73,6 +73,7 @@
                     </select>
                 </div>
                 <button onclick="cadastrar()">Criar conta</button>
+                <div style="display: none;" id="loading"><i class="fa-solid fa-spinner fa-spin-pulse fa-2x1"></i></div>
             </div>
         </div>
         <!-- <div id="div_aguardar" class="loading-div">
@@ -107,11 +108,11 @@
         var confirmacaoSenhaVar = ipt_confirmacao_senha.value;
         var artistaVar = artista_fav.value
 
-        if (nomeVar == "" || emailVar == "" || dataVar == "" || cpfVar == "" || senhaVar == "" || confirmacaoSenhaVar == "" || artistaVar == 0) {
+        if (nomeVar == "" || emailVar == "" || dataVar == "" || cpfVar == "" || senhaVar == "" || confirmacaoSenhaVar == "" || artistaVar == 0 
+        || senhaVar != confirmacaoSenhaVar) {
             // cardErro.style.display = "block"
             // mensagem_erro.innerHTML = "(Mensagem de erro para todos os campos em branco)";
-            alert ("Preencha todos os campos")
-
+            alert ("As senhas precisam ser iguais, e o todos os campos preenchidos")
             // finalizarAguardar();
             return false;
         }
@@ -140,13 +141,11 @@
             console.log("resposta: ", resposta);
 
             if (resposta.ok) {
-                cardErro.style.display = "block";
-
-                alert ("Cadastro realizado com sucesso! Redirecionando para tela de Login...")
+                loading.style.display = "block"
 
                 setTimeout(() => {
                     window.location = "login.html";
-                }, "2000")
+                },1500)
                 
                 limparFormulario();
                 // finalizarAguardar();

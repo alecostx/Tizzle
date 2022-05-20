@@ -44,6 +44,8 @@
                     <br>
                 </div>
                 <button onclick="entrar()">Entre</button>
+                <br><br>
+                <div style="display: none;" id="loading"><i class="fa-solid fa-spinner fa-spin-pulse fa-2x1"></i></div>
                 <br> <br>
                 <a href="cadastro.html">
                     <h4>Criar conta</h4>
@@ -98,6 +100,7 @@
             })
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO entrar()!")
+            loading.style.display = "block"
 
             if (resposta.ok) {
                 console.log(resposta);
@@ -112,7 +115,7 @@
 
                     setTimeout(function () {
                         window.location = "/noticias/noticias.html";
-                    }, 1000); // apenas para exibir o loading
+                    }, 2000); // apenas para exibir o loading
 
                 });
 
