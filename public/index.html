@@ -313,11 +313,11 @@
 <script>
     var img1 = document.getElementById("img1"); //Guarda o id em que as imagens vão ser substituidas
 
-    var imagens = new Array(  // Vai guardar todas as imagens
+    var imagens = [ 
         "assets/img1.webp",
         "assets/img2.jpg",
         "assets/img3.jpg"
-    );
+    ]
     var len = imagens.length;
     var i = 0
 
@@ -325,6 +325,7 @@
         if (i > len - 1) {
             i = 0
         }
+        
         img1.src = imagens[i];
         i++
         setTimeout('slider()', 3000); // Setando o tempo de transição (3s)

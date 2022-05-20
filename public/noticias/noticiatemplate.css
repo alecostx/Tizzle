@@ -37,11 +37,14 @@ width: 100vw;
 .content h1 {
     font-size: 3rem;
     font-weight: 900;
+    margin-bottom: 100px;
 }
 .content p {
-    font-weight: 400;
-    font-size: 1.5rem;
+    font-weight: 500;
+    font-size: 2rem;
 }
+
+
 
 
 

@@ -123,10 +123,11 @@
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    background-color: #101010;
 }
 
 .card1 .foto {
-    background-image: url(assets/KANYE-WEST-MET-THUMB.webp);
+    background-image: url(../assets/KANYE-WEST-MET-THUMB.webp);
     height: 100%;
     width: 100%;
     background-size: contain;
@@ -136,7 +137,7 @@
 }
 
 .card2 .foto {
-    background-image: url(assets/Future-I-Never-Liked-You-2022.webp);
+    background-image: url(../assets/Future-I-Never-Liked-You-2022.webp);
     height: 100%;
     width: 100%;
     background-size: contain;
@@ -145,7 +146,7 @@
     transition: 1.2s;
 }
 .card3 .foto {
-    background-image: url(assets/Screenshot_245.png);
+    background-image: url(../assets/Screenshot_245.png);
     height: 100%;
     width: 100%;
     background-size: contain;
@@ -154,7 +155,7 @@
     transition: 1.2s;
 }
 .card4 .foto {
-    background-image: url(assets/drakenews.jpg);
+    background-image: url(../assets/drakenews.jpg);
     height: 100%;
     width: 100%;
     background-size: contain;
@@ -163,7 +164,7 @@
     transition: 1.2s;
 }
 .card5 .foto {
-    background-image: url(assets/dontolivernews.jpg);
+    background-image: url(../assets/dontolivernews.jpg);
     height: 100%;
     width: 100%;
     background-size: contain;
@@ -172,7 +173,7 @@
     transition: 1.2s;
 }
 .card6 .foto {
-    background-image: url(assets/YNWMelly.webp);
+    background-image: url(../assets/YNWMelly.webp);
     height: 100%;
     width: 100%;
     background-size: contain;
@@ -283,7 +284,7 @@ background-color: #101010;
 }
 
 .not1 .foto {
-    background-image: url(assets/camisatime.jpg);
+    background-image: url(../assets/camisatime.jpg);
     height: 100%;
     width: 100%;
     background-size: contain;
@@ -292,7 +293,7 @@ background-color: #101010;
     transition: 1.2s;
 }
 .not2 .foto {
-    background-image: url(assets/amoroulealdade.jpg);
+    background-image: url(../assets/amoroulealdade.jpg);
     height: 100%;
     width: 100%;
     background-size: contain;
@@ -302,7 +303,7 @@ background-color: #101010;
 }
 
 .not3 .foto {
-    background-image: url(assets/justin.webp);
+    background-image: url(../assets/justin.webp);
     height: 100%;
     width: 100%;
     background-size: contain;
@@ -312,7 +313,7 @@ background-color: #101010;
 }
 
 .not4 .foto {
-    background-image: url(assets/xxxkanye.jpg);
+    background-image: url(../assets/xxxkanye.jpg);
     height: 100%;
     width: 100%;
     background-size: contain;
