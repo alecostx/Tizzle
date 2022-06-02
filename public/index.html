@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/rank.css">
     <script src="https://kit.fontawesome.com/4ea0191552.js" crossorigin="anonymous"></script>
+    <script src="js/funcoes.js"></script>
 
 </head>
 
@@ -39,7 +40,8 @@
                 <h3>Fique por dentro do mundo do Hip-Hop e R&B!</h3>
                 <a href="login.html"><button>Faça parte!</button></a>
             </div>
-            <a href="#ranks"><i style="color: white; margin-left: 50%; margin-top: 35px; --fa-animation-duration: 2s;" class="fa-solid fa-arrow-down fa-3x fa-bounce"></i></a>
+            <a href="#ranks"><i style="color: white; margin-left: 50%; margin-top: 35px; --fa-animation-duration: 2s;"
+                    class="fa-solid fa-arrow-down fa-3x fa-bounce"></i></a>
 
         </div>
     </div>
@@ -51,7 +53,7 @@
             <div class="tipos_rank">
                 <h1 onclick="mostrarmusica()" class="agora">Top músicas</h1>
                 <h1 onclick="mostrarartista()">Top artistas</h1>
-                <h1 onclick="mostraralbum()">Top albuns</h1>
+                <h1 onclick="mostraralbum()">Top fans</h1>
             </div>
             <table>
                 <thead>
@@ -148,7 +150,7 @@
             <div class="tipos_rank">
                 <h1 onclick="mostrarmusica()">Top músicas</h1>
                 <h1 onclick="mostrarartista()" class="agora">Top artistas</h1>
-                <h1 onclick="mostraralbum()">Top albuns</h1>
+                <h1 onclick="mostraralbum()">Top Fans</h1>
             </div>
             <table>
                 <thead>
@@ -227,81 +229,67 @@
             <div class="tipos_rank">
                 <h1 onclick="mostrarmusica()">Top músicas</h1>
                 <h1 onclick="mostrarartista()">Top artistas</h1>
-                <h1 onclick="mostraralbum()" class="agora">Top albuns</h1>
+                <h1 onclick="mostraralbum()" class="agora">Top Fans</h1>
+                <!-- <button class="btn-chart btn-pink" onclick="obterDadosGrafico(1)">Aquario 1</button> -->
             </div>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Posição</th>
-                        <th>Artista</th>
-                        <th>Nome</th>
-                        <th>Gênero</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>Ivy</td>
-                        <td>Frank Ocean</td>
-                        <td><img src="assets/frank-ocean-blonde.jpg" alt=""></td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Try me</td>
-                        <td>The Weekend</td>
-                        <td><img src="assets/mydearmelancholy.jpg" alt=""></td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Los Pollos Hermanos</td>
-                        <td>Kucks</td>
-                        <td><img src="assets/lospollos.jpg" alt=""></td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td>Nice & Good</td>
-                        <td>Kucks ft SL</td>
-                        <td><img src="assets/nicegood.jpg" alt=""></td>
-                    </tr>
-                    <tr>
-                        <td>5</td>
-                        <td>Selfish</td>
-                        <td>Kanye West ft XXXTENTACION</td>
-                        <td><img src="assets/donda2.jpg" alt=""></td>
-                    </tr>
-                    <tr>
-                        <td>6</td>
-                        <td>SWEET / I THOUGHT YOU WANTED TO DANCE</td>
-                        <td>Tyler, The Creator, Brent Faiyaz, Fana Hues</td>
-                        <td><img src="assets/callmeifyougetlost.jpg" alt=""></td>
-                    </tr>
-                    <tr>
-                        <td>7</td>
-                        <td>See you Again</td>
-                        <td>Tyler, The Creator ft Kali Uchis</td>
-                        <td><img src="assets/seeu.webp" alt=""></td>
-                    </tr>
-                    <tr>
-                        <td>8</td>
-                        <td>Stylin'</td>
-                        <td>Sainté</td>
-                        <td><img src="assets/stylin.jpg" alt="">
-                    </tr>
-                    <tr>
-                        <td>9</td>
-                        <td>
-                            Stop Breathing</td>
-                        <td>Playboi Carti</td>
-                        <td><img src="assets/redd.webp" alt=""></td>
-                    </tr>
-                    <tr>
-                        <td>10</td>
-                        <td>Leans, Pt. 2</td>
-                        <td>Yunk Vino, Volp</td>
-                        <td><img src="assets/leanspt2.png" alt=""></td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="cards">
+                <div class="card">
+                    <!-- <h1>Tyler</h1> -->
+                    <div class="fotorank"></div>
+                    <div class="perfil1">
+                        <img src="assets/tylergrammy.jpg">
+                    </div>
+                    <div class="infos">
+                        <h1>Tyler, the creator</h1>
+                        <h2>Possui 827 fãs que utilizam a Tizzle</h2></div>
+                    <div class="temperatura">
+                        <p id="temp_aquario_1"></p>
+                    </div>
+                </div>
+
+
+
+
+                
+                <div class="card">
+                    <h1>Kanye</h1>
+                    <div class="perfil1">
+                        <img src="assets/kanyeicon.png">
+                    </div>
+                    <div class="temperatura">
+                        <p id="temp_aquario_2"></p>
+                    </div>
+
+                </div>
+                <div class="card">
+                    <h1>The Weeknd</h1>
+                    <div class="perfil1">
+                        <img src="assets/THEWEEKENDicon.jpg">
+                    </div>
+                    <div class="temperatura">
+                        <p id="temp_aquario_3"></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <h1>Fran Ocean</h1>
+                    <div class="perfil1">
+                        <img src="assets/frank.jpg">
+                    </div>
+                    <div class="temperatura">
+                        <p id="temp_aquario_4"></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <h1>YNW Melly</h1>
+                    <div class="perfil1">
+                        <img src="assets/mellyicon.jpg">
+                    </div>
+                    <div class="temperatura">
+                        <p id="temp_aquario_5"></p>
+                    </div>
+                </div>
+               
+            </div>
         </div>
     </section>
 
@@ -313,7 +301,7 @@
 <script>
     var img1 = document.getElementById("img1"); //Guarda o id em que as imagens vão ser substituidas
 
-    var imagens = [ 
+    var imagens = [
         "assets/img1.webp",
         "assets/img2.jpg",
         "assets/img3.jpg"
@@ -321,16 +309,16 @@
     var len = imagens.length;
     var i = 0
 
+
     function slider() {
         if (i > len - 1) {
             i = 0
         }
-        
         img1.src = imagens[i];
         i++
         setTimeout('slider()', 3000); // Setando o tempo de transição (3s)
     }
-    
+
     function mostrarmusica() {
         tabela_artistas.style.display = "none"
         tabela_musicas.style.display = "block"
@@ -345,6 +333,115 @@
         tabela_artistas.style.display = "none"
         tabela_musicas.style.display = "none"
         tabela_albuns.style.display = "block"
+        atualizacaoPeriodica()
+    }
+
+
+    function atualizacaoPeriodica() {
+        obterdados(1);
+        obterdados(2);
+        obterdados(3);
+        obterdados(4);
+        obterdados(5);
+        obterdados(6);
+
+        // function sendData() {
+        // 	var http = new XMLHttpRequest();
+        // 	http.open('POST', 'http://localhost:3000/api/sendData', false);
+        // 	http.send(null);
+        // }
+
+        setInterval(() => {
+            // sendData();
+        }, 2000);
+        setTimeout(atualizacaoPeriodica, 5000);
+    }
+
+    function obterdados(idartista) {
+        fetch(`/medidas/tempo-real/${idartista}`)
+            .then(resposta => {
+
+                if (resposta.ok) {
+                    resposta.json().then(resposta => {
+
+                        console.log(`Dados recebidos: ${JSON.stringify(resposta)}`);
+
+                        var dados = {
+                            favorito: resposta[0].favorito,
+                        }
+
+                        alertar(resposta[0].favorito, idartista);
+                    });
+                } else {
+
+                    console.error('Nenhum dado encontrado ou erro na API');
+                }
+            })
+            .catch(function (error) {
+                console.error(`Erro na obtenção dos dados do aquario p/ gráfico: ${error.message}`);
+            });
+
+    }
+
+    function alertar(favorito, idartista) {
+        var limites = {
+            muito_quente: 23,
+            quente: 22,
+            ideal: 20,
+            frio: 10,
+            muito_frio: 5
+        };
+
+        var classe_temperatura = 'cor-alerta';
+
+        if (favorito >= limites.muito_quente) {
+            classe_favorito = 'cor-alerta perigo-quente';
+            console.log("caiu no 1")
+        }
+        else if (favorito < limites.muito_quente && favorito >= limites.quente) {
+            classe_favorito = 'cor-alerta alerta-quente';
+            console.log("caiu no 2")
+        }
+        else if (favorito < limites.quente && favorito > limites.frio) {
+            classe_favorito = 'cor-alerta ideal';
+            console.log("caiu no 3")
+        }
+        else if (favorito <= limites.frio && favorito > limites.muito_frio) {
+            classe_favorito = 'cor-alerta alerta-frio';
+            console.log("caiu no 4")
+        }
+        else if (favorito < limites.min_favorito) {
+            classe_favorito = 'cor-alerta perigo-frio';
+            console.log("caiu no 5")
+        }
+
+        var card;
+
+        if (idartista == 1) {
+            temp_aquario_1.innerHTML = favorito;
+            card = card_1
+        }
+        else if (idartista == 2) {
+            temp_aquario_2.innerHTML = favorito;
+            card = card_2
+        } else if (idartista == 3) {
+            temp_aquario_3.innerHTML = favorito;
+            card = card_3
+        } else if (idartista == 4) {
+            temp_aquario_4.innerHTML = favorito;
+            card = card_4
+        } else if (idartista == 5) {
+            temp_aquario_5.innerHTML = favorito;
+            card = card_4
+        } else if (idartista == 6) {
+            temp_aquario_6.innerHTML = favorito;
+            card = card_4
+        }
+
+
+        // alterando
+        card.className = classe_temperatura;
+
     }
 
 

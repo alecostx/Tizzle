@@ -1,10 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400&family=Orelega+One&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,500;1,200;1,300&display=swap');
 * {
     padding: 0;
     margin: 0;
     font-family: 'Nunito', sans-serif;
-    font-family: 'Orelega One', cursive;
 }
 
 
@@ -170,3 +169,40 @@ html {
     background-color: #a9a9a9;
     color: black;
 }
+
+.perfil1 {
+    height: 300px;
+    width: 300px;
+}
+
+.perfil1 img {
+    height: 100%;
+    width: 100%;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-right: 150px;
+    margin-left: 150px;
+    justify-content: space-around;
+}
+.infos {
+    height: 200px;
+    width: 300px;
+    background-color: rgb(240, 240, 240);
+
+}
+
+.infos h1 {
+    color: black;
+    margin-left: 60px;
+    margin-bottom: 25px;
+}
+.infos h2 {
+    padding: 50px;
+}
+
+
