@@ -364,7 +364,119 @@ background-color: #101010;
     padding-right: 1%;
 }
 
+.lancamentos {
+    background-color: #101010;
+    width: 100%;
+    height: 100vh;
+}
+.lancamentos h1 {
+    padding: 38px;
+    color: #a9a9a9;
+}
+.faixalanca {
+    background-color: #101010;
+    height: 450px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.faixalanca2 {
+    margin-top: 25px;
+    background-color: #101010;
+    height: 450px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.lanca1 {
+    border-radius: 6px;
+    background-image: url(../assets/jcole.jpg);
+    height: 100%;
+    width: 30%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 1.2s;
+    filter: blur(1px);
+}
+.lanca2 {
+    border-radius: 6px;
+    background-image: url(../assets/play.jpg);
+    height: 100%;
+    width: 30%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 1.2s;
+    filter: blur(1px);
+}
+.lanca3 {
+    border-radius: 6px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../assets/Travis\ Scott\ Wallpapers.jpg);
+    height: 100%;
+    width: 30%;
+    transition: all 1.2s;
+    filter: blur(1px);
+}
+.lanca4 {
+    border-radius: 6px;
+    background-image: url(../assets/Kanye\ West\ Donda.jpg);
+    height: 100%;
+    width: 30%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 1.2s;
+    filter: blur(1px);
+}
+.lanca5 {
+    border-radius: 6px;
+    background-image: url(../assets/tylerrrrrr.jpg);
+    height: 100%;
+    width: 30%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 1.2s;
+    filter: blur(1px);
+}
+.lanca6 {
+    border-radius: 6px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../assets/machado.jpg);
+    height: 100%;
+    width: 30%;
+    transition: all 1.2s;
+    filter: blur(1px);
+}
 
-
-
+.lanca1:hover {
+    filter: blur(0px);
+    border-radius: 0px;
+}
+.lanca2:hover {
+    filter: blur(0px);
+    border-radius: 0px;
+}
+.lanca3:hover {
+    filter: blur(0px);
+    border-radius: 0px;
+}
+.lanca5:hover {
+    filter: blur(0px);
+    border-radius: 0px;
+}
+.lanca4:hover {
+    filter: blur(0px);
+    border-radius: 0px;
+}
+.lanca6:hover {
+    filter: blur(0px);
+    border-radius: 0px;
+}
 
