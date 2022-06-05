@@ -283,52 +283,49 @@
                         <img src="assets/tylergrammy.jpg">
                     </div>
                     <div class="infos">
-                        <h1>Tyler, the creator</h1>
-                        <h2>Possui 827 fãs que utilizam a Tizzle</h2>
-                    </div>
-                    <div class="temperatura">
+                        <h1>Tyler, the creator </h1>
                         <p id="temp_aquario_1"></p>
                     </div>
+
                 </div>
-
-
-
-
-
                 <div class="card">
-                    <h1>Kanye</h1>
+
                     <div class="perfil1">
-                        <img src="assets/kanyeicon.png">
+                        <img src="assets/kanyefas.jpg">
                     </div>
-                    <div class="temperatura">
+                    <div class="infos">
+                        <h1>Kanye West</h1>
                         <p id="temp_aquario_2"></p>
                     </div>
 
                 </div>
                 <div class="card">
-                    <h1>The Weeknd</h1>
+
                     <div class="perfil1">
                         <img src="assets/THEWEEKENDicon.jpg">
                     </div>
-                    <div class="temperatura">
+                    <div class="infos">
+                        <h1>The Weeknd</h1>
                         <p id="temp_aquario_3"></p>
                     </div>
                 </div>
                 <div class="card">
-                    <h1>Fran Ocean</h1>
                     <div class="perfil1">
                         <img src="assets/frank.jpg">
                     </div>
-                    <div class="temperatura">
+                    <div class="infos">
+                        <h1>Frank Ocean</h1>
                         <p id="temp_aquario_4"></p>
                     </div>
+
                 </div>
                 <div class="card">
-                    <h1>YNW Melly</h1>
+
                     <div class="perfil1">
                         <img src="assets/mellyicon.jpg">
                     </div>
-                    <div class="temperatura">
+                    <div class="infos">
+                        <h1>YNW Melly</h1>
                         <p id="temp_aquario_5"></p>
                     </div>
                 </div>
@@ -347,10 +344,7 @@
                 <h5>TOP 10</h5>
             </div>
             <div class="letter">
-                <input type="email" placeholder="Email...">
-                <h4>Assine nossa newsletter!</h4>
-                <button>Assinar</button>
-
+                <h5>by Alexandre Costa</h5>
             </div>
         </div>
     </footer>
@@ -361,6 +355,9 @@
 
 </html>
 <script>
+
+    // Inicio do player de música
+
     var ivy = document.getElementById("ivy")
     var icone = document.getElementById("iconeplay")
     icone.onclick = function () {
@@ -472,6 +469,10 @@
         }
     }
 
+    // Fim do player de música
+
+    // Inicio do slider 
+
 
     var img1 = document.getElementById("img1"); //Guarda o id em que as imagens vão ser substituidas
 
@@ -493,6 +494,10 @@
         setTimeout('slider()', 3000); // Setando o tempo de transição (3s)
     }
 
+    // Fim do slider 
+
+    // Inicio das funções do top 10
+
     function mostrarmusica() {
         tabela_artistas.style.display = "none"
         tabela_musicas.style.display = "block"
@@ -509,6 +514,10 @@
         tabela_albuns.style.display = "block"
         atualizacaoPeriodica()
     }
+
+    // Fim das funções do top 10
+
+    // Inicio da aquisição de dados em tempo real 
 
 
     function atualizacaoPeriodica() {
@@ -592,23 +601,23 @@
         var card;
 
         if (idartista == 1) {
-            temp_aquario_1.innerHTML = favorito;
+            temp_aquario_1.innerHTML = favorito + " Favoritos";
             card = card_1
         }
         else if (idartista == 2) {
-            temp_aquario_2.innerHTML = favorito;
+            temp_aquario_2.innerHTML = favorito + " Favoritos";
             card = card_2
         } else if (idartista == 3) {
-            temp_aquario_3.innerHTML = favorito;
+            temp_aquario_3.innerHTML = favorito + " Favoritos";
             card = card_3
         } else if (idartista == 4) {
-            temp_aquario_4.innerHTML = favorito;
+            temp_aquario_4.innerHTML = favorito + " Favoritos";
             card = card_4
         } else if (idartista == 5) {
-            temp_aquario_5.innerHTML = favorito;
+            temp_aquario_5.innerHTML = favorito + " Favoritos" ;
             card = card_4
         } else if (idartista == 6) {
-            temp_aquario_6.innerHTML = favorito;
+            temp_aquario_6.innerHTML = favorito + " Favoritos";
             card = card_4
         }
 
@@ -617,6 +626,7 @@
         card.className = classe_temperatura;
 
     }
+    // Fim da aquisição de dados em tempo real
 
 
 

@@ -172,13 +172,19 @@ html {
 }
 
 .perfil1 {
-    height: 300px;
-    width: 300px;
+    height: 250px;
+    width: 225px;
 }
 
 .perfil1 img {
     height: 100%;
     width: 100%;
+}
+.card:hover {
+    transform: scale(1.01);
+}
+.card {
+    transition: all (1.2s);
 }
 
 .cards {
@@ -186,78 +192,89 @@ html {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    margin-right: 150px;
-    margin-left: 150px;
     justify-content: space-around;
 }
 
 .infos {
-    height: 200px;
-    width: 300px;
-    background-color: rgb(240, 240, 240);
-
+    height: 125px;
+    width: 100%;
+    background-color: #DA4453;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
 }
 
 .infos h1 {
-    color: black;
-    margin-left: 60px;
-    margin-bottom: 25px;
+    color: white;
 }
 
-.infos h2 {
-    padding: 50px;
+.infos p {
+    font-size: 1.6rem;
 }
 
 footer {
-    height: 250px;
+    height: 150px;
     width: 100%;
 }
+
 .footer-container {
-height: 100%;
-width: 100%;
-background-color: #101010;
-color: #999;
+    height: 100%;
+    width: 100%;
+    background-color: #101010;
+    color: #999;
 
 }
+
 .opcoes {
     display: flex;
     justify-content: center;
     text-align: center;
+    padding-top: 22px;
 }
+
 .footer-container h5 {
     margin-right: 22px;
 }
+
 .letter {
     display: flex;
     justify-content: center;
     text-align: center;
 }
 
-.letter input {
-    margin-top: 50px;
-    border: none;
-    background-color: black;
-    color: white;
-    border-radius: 4px;
-    padding-left: 4px;
-}
-
-.opcoes h5 {
-    margin-top: 100px;
-}
-
-.letter h4 {
+.letter h5 {
     margin-top: 50px;
     margin-left: 12px;
 }
 
-#iconeplay, #iconeplay2, #iconeplay3, #iconeplay4, #iconeplay5, #iconeplay6,
-#iconeplay7, #iconeplay8, #iconeplay9, #iconeplay10 {
+#iconeplay,
+#iconeplay2,
+#iconeplay3,
+#iconeplay4,
+#iconeplay5,
+#iconeplay6,
+#iconeplay7,
+#iconeplay8,
+#iconeplay9,
+#iconeplay10 {
     cursor: pointer;
     height: 24px;
     width: 24px;
     margin-bottom: 30px;
 }
+::-webkit-scrollbar {
+    width: 12px;
+}
 
+::-webkit-scrollbar-track {
+    background-color: #101010;
 
+}
 
+::-webkit-scrollbar-thumb {
+    background-color: crimson;
+    border-radius: 12px;
+}
