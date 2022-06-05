@@ -250,3 +250,14 @@ color: #999;
     margin-top: 50px;
     margin-left: 12px;
 }
+
+#iconeplay, #iconeplay2, #iconeplay3, #iconeplay4, #iconeplay5, #iconeplay6,
+#iconeplay7, #iconeplay8, #iconeplay9, #iconeplay10 {
+    cursor: pointer;
+    height: 24px;
+    width: 24px;
+    margin-bottom: 30px;
+}
+
+
+
