@@ -1,19 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300&family=Orelega+One&display=swap');
+
 * {
+    margin: 0%;
     padding: 0;
-    margin: 0;
+    font-family: 'Nunito';
     font-family: Arial, Helvetica, sans-serif;
     list-style: none;
     text-decoration: none;
+
+}
+
+body {
+    background-color: #101010;
 }
 
 .header {
     width: 100vw;
     height: 100%;
-    background: #101010; 
-      
+    background: #101010;
+
 }
 
-.header .inner{
+.header .inner {
     width: 100%;
     height: 100%;
     display: block;
@@ -21,25 +29,25 @@
     padding: 0;
 }
 
-.header .logo{
+.header .logo {
     float: left;
     color: #ffffff;
     margin-left: 20px;
     margin-top: 20px;
 }
 
-.header .logo div{
+.header .logo div {
     height: 100%;
     display: table-cell;
     vertical-align: middle;
 }
 
-.header nav{
+.header nav {
     float: right;
     height: 100%;
 }
 
-.header nav li{
+.header nav li {
     display: table;
     height: 100%;
     float: left;
@@ -51,19 +59,19 @@
     vertical-align: middle;
 }
 
-.header nav a{
+.header nav a {
     color: #ffffff;
 }
 
-.header nav .button{
+.header nav .button {
     background-color: #ffffff;
     color: black;
     padding: 10px 20px;
     border-radius: 4px;
-   
+
 }
 
-.header nav a:hover{
+.header nav a:hover {
     border-right: none;
     border-left: none;
     border-top: none;
@@ -71,48 +79,52 @@
 }
 
 
-.header nav .button:hover{
+.header nav .button:hover {
     border-right: none;
     border-left: none;
     border-top: none;
     border-bottom: none;
 }
+
 .overfoto {
     width: 100%;
     height: 100%;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9));
 }
 
-.card1 .overfoto h1{
+.card1 .overfoto h1 {
     color: white;
     padding-top: 280px;
     padding-left: 200px;
 }
 
-.card2 .overfoto h3{
+.card2 .overfoto h3 {
     color: white;
     padding-top: 280px;
     padding-left: 15px;
-    
+
 }
-.card3 .overfoto h3{
+
+.card3 .overfoto h3 {
     color: white;
     padding-top: 280px;
     padding-left: 15px;
-    
+
 }
-.card4 .overfoto h3{
-    color: white;
-    padding-top: 155px;
-    padding-left: 20%;
-}
-.card5 .overfoto h3{
+
+.card4 .overfoto h3 {
     color: white;
     padding-top: 155px;
     padding-left: 20%;
 }
 
-.card6 .overfoto h3{
+.card5 .overfoto h3 {
+    color: white;
+    padding-top: 155px;
+    padding-left: 20%;
+}
+
+.card6 .overfoto h3 {
     color: white;
     padding-top: 180px;
     padding-left: 20%;
@@ -145,6 +157,7 @@
     background-size: cover;
     transition: 1.2s;
 }
+
 .card3 .foto {
     background-image: url(../assets/Screenshot_245.png);
     height: 100%;
@@ -154,6 +167,7 @@
     background-size: cover;
     transition: 1.2s;
 }
+
 .card4 .foto {
     background-image: url(../assets/drakenews.jpg);
     height: 100%;
@@ -163,6 +177,7 @@
     background-size: cover;
     transition: 1.2s;
 }
+
 .card5 .foto {
     background-image: url(../assets/dontolivernews.jpg);
     height: 100%;
@@ -172,6 +187,7 @@
     background-size: cover;
     transition: 1.2s;
 }
+
 .card6 .foto {
     background-image: url(../assets/YNWMelly.webp);
     height: 100%;
@@ -187,6 +203,7 @@
     transform: scale(1.01);
     filter: brightness(2);
 }
+
 .card1 {
     height: 60%;
     width: 60%;
@@ -236,7 +253,7 @@
 }
 
 .painel {
-background-color: #101010;
+    background-color: #101010;
     width: 100%;
     height: 80vh;
     display: flex;
@@ -278,6 +295,7 @@ background-color: #101010;
     cursor: pointer;
     border-right: #101010 solid 3px;
 }
+
 *::selection {
     background-color: #a9a9a9;
     color: black;
@@ -292,6 +310,7 @@ background-color: #101010;
     background-size: cover;
     transition: 1.2s;
 }
+
 .not2 .foto {
     background-image: url(../assets/amoroulealdade.jpg);
     height: 100%;
@@ -326,14 +345,17 @@ background-color: #101010;
     transform: scale(1.01);
     filter: brightness(1.3);
 }
+
 .not3 .foto:hover {
     transform: scale(1.01);
     filter: brightness(1.3);
 }
+
 .not2 .foto:hover {
     transform: scale(1.01);
     filter: brightness(1.3);
 }
+
 .not1 .foto:hover {
     transform: scale(1.01);
     filter: brightness(1.3);
@@ -351,12 +373,14 @@ background-color: #101010;
     padding-left: 20%;
     padding-right: 1%;
 }
+
 .not4 .over h3 {
     color: white;
     padding-top: 300px;
     padding-left: 15%;
     padding-right: 1%;
 }
+
 .not2 .over h3 {
     color: white;
     padding-top: 320px;
@@ -369,10 +393,12 @@ background-color: #101010;
     width: 100%;
     height: 100vh;
 }
+
 .lancamentos h1 {
     padding: 38px;
     color: #a9a9a9;
 }
+
 .faixalanca {
     background-color: #101010;
     height: 450px;
@@ -380,6 +406,7 @@ background-color: #101010;
     display: flex;
     justify-content: space-evenly;
 }
+
 .faixalanca2 {
     margin-top: 25px;
     background-color: #101010;
@@ -388,6 +415,7 @@ background-color: #101010;
     display: flex;
     justify-content: space-evenly;
 }
+
 .lanca1 {
     border-radius: 6px;
     background-image: url(../assets/jcole.jpg);
@@ -399,6 +427,7 @@ background-color: #101010;
     transition: 1.2s;
     filter: blur(1px);
 }
+
 .lanca2 {
     border-radius: 6px;
     background-image: url(../assets/play.jpg);
@@ -410,6 +439,7 @@ background-color: #101010;
     transition: 1.2s;
     filter: blur(1px);
 }
+
 .lanca3 {
     border-radius: 6px;
     background-size: contain;
@@ -421,6 +451,7 @@ background-color: #101010;
     transition: all 1.2s;
     filter: blur(1px);
 }
+
 .lanca4 {
     border-radius: 6px;
     background-image: url(../assets/Kanye\ West\ Donda.jpg);
@@ -432,6 +463,7 @@ background-color: #101010;
     transition: 1.2s;
     filter: blur(1px);
 }
+
 .lanca5 {
     border-radius: 6px;
     background-image: url(../assets/tylerrrrrr.jpg);
@@ -443,6 +475,7 @@ background-color: #101010;
     transition: 1.2s;
     filter: blur(1px);
 }
+
 .lanca6 {
     border-radius: 6px;
     background-size: contain;
@@ -459,24 +492,33 @@ background-color: #101010;
     filter: blur(0px);
     border-radius: 0px;
 }
+
 .lanca2:hover {
     filter: blur(0px);
     border-radius: 0px;
 }
+
 .lanca3:hover {
     filter: blur(0px);
     border-radius: 0px;
 }
+
 .lanca5:hover {
     filter: blur(0px);
     border-radius: 0px;
 }
+
 .lanca4:hover {
     filter: blur(0px);
     border-radius: 0px;
 }
+
 .lanca6:hover {
     filter: blur(0px);
     border-radius: 0px;
 }
 
+.lancamentos i {
+    margin-left: 36px;
+    color: #999;
+}
