@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/rank.css">
     <script src="https://kit.fontawesome.com/4ea0191552.js" crossorigin="anonymous"></script>
@@ -336,18 +337,19 @@
     <footer>
         <div class="footer-container">
             <div class="opcoes">
-                <h5>Home</h5>
-                <h5>Noticias</h5>
-                <h5>Cadastre-se</h5>
-                <h5>Login</h5>
-                <h5>Sobre</h5>
-                <h5>TOP 10</h5>
+                <a href="index.html"><h5>Home</h5></a>
+                <a href="login.html"><h5>Noticias</h5></a>
+                <a href="cadastro.html"><h5>Cadastre-se</h5></a>
+                <a href="login.html"><h5>Login</h5></a>
+                <a href="sobre.html"><h5>Sobre</h5></a>
+                <a href="index.html"><h5>TOP 10</h5></a>
             </div>
             <div class="letter">
                 <h5>by Alexandre Costa</h5>
             </div>
         </div>
     </footer>
+
 
 
 
@@ -369,6 +371,8 @@
             icone.src = "assets/circle-play-solid.svg"
         }
     }
+
+
     var tryme = document.getElementById("tryme")
     var icone2 = document.getElementById("iconeplay2")
     icone2.onclick = function () {
@@ -483,8 +487,6 @@
     ]
     var len = imagens.length;
     var i = 0
-
-
     function slider() {
         if (i > len - 1) {
             i = 0
@@ -614,7 +616,7 @@
             temp_aquario_4.innerHTML = favorito + " Favoritos";
             card = card_4
         } else if (idartista == 5) {
-            temp_aquario_5.innerHTML = favorito + " Favoritos" ;
+            temp_aquario_5.innerHTML = favorito + " Favoritos";
             card = card_4
         } else if (idartista == 6) {
             temp_aquario_6.innerHTML = favorito + " Favoritos";
